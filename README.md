@@ -8,7 +8,8 @@ https://www.haikuinsider.org/category/kitlab
 <a href="https://www.haikuinsider.org/category/kitlab"><img width="1271" height="917" alt="kitlab" src="https://github.com/user-attachments/assets/aeb6833b-dd81-48c6-ba55-0fa7555cca4c" /></a>
 
 <br>
-The goal of HaikuKitLab is simple: learn, share, and build together.
+The goal of HaikuKitLab is simple: learn, share, and build together.<br>
+
 Each example is crafted to help developers understand how the Haiku API works in real-world scenarios.<br>
 
 But this isn’t just a read-only repo — it’s meant to grow with the community!
