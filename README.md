@@ -4,7 +4,7 @@ GitHub repository dedicated to exploring and experimenting with the different Ki
 
 This repo goes hand in hand with the KitLab article series where we dive deep into Haiku’s native development environment, showcasing examples, demos, and practical use cases for each Kit: https://www.haikuinsider.org/category/kitlab
 
-<img width="1271" height="917" alt="kitlab" src="https://github.com/user-attachments/assets/aeb6833b-dd81-48c6-ba55-0fa7555cca4c" />
+<a href="https://www.haikuinsider.org/category/kitlab"><img width="1271" height="917" alt="kitlab" src="https://github.com/user-attachments/assets/aeb6833b-dd81-48c6-ba55-0fa7555cca4c" /></a>
 
 
 The goal of HaikuKitLab is simple: learn, share, and build together.
