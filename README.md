@@ -6,6 +6,7 @@ This repo goes hand in hand with the KitLab article series where we dive deep in
 
 <img width="1271" height="917" alt="kitlab" src="https://github.com/user-attachments/assets/aeb6833b-dd81-48c6-ba55-0fa7555cca4c" />
 
+
 The goal of HaikuKitLab is simple: learn, share, and build together.
 Each example is crafted to help developers understand how the Haiku API works in real-world scenarios.
 
