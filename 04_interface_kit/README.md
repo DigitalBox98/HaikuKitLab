@@ -10,5 +10,5 @@ Read the full articles on HaikuInsider:
 04 [Drawing Shapes in a View](https://www.haikuinsider.org/interface-kit-drawing-shapes-in-a-view)  
 05 [Using Layouts](https://www.haikuinsider.org/interface-kit-using-layouts)  
 06 [Use Drag and Drop](https://www.haikuinsider.org/interface-kit-use-drag-and-drop)  
-07 [Dropping Files](https://www.haikuinsider.org/interface-kit-dropping-files)
+07 [Dropping Files](https://www.haikuinsider.org/interface-kit-dropping-files) <br>
 08 [Application Menus](https://www.haikuinsider.org/interface-kit-application-menus)
