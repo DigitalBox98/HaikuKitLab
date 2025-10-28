@@ -11,4 +11,4 @@ Read the full articles on HaikuInsider:
 05 [Using Layouts](https://www.haikuinsider.org/interface-kit-using-layouts)  
 06 [Use Drag and Drop](https://www.haikuinsider.org/interface-kit-use-drag-and-drop)  
 07 [Dropping Files](https://www.haikuinsider.org/interface-kit-dropping-files)
-08 [Application Menus](https://www.haikuinsider.org/interface-kit-application-menus)
+08 [Application Menus](https://www.haikuinsider.org/interface-kit-application-menus)
