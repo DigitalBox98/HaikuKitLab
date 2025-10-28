@@ -4,7 +4,7 @@ This folder contains examples demonstrating how to use the **Haiku Interface Kit
 
 Read the full articles on HaikuInsider:
 
-01 [Drawing Text in a Custom View](https://www.haikuinsider.org/interface-kit-drawing-text-in-a-custom-view)  
+01 [Drawing Text in a Custom View](https://www.haikuinsider.org/interface-kit-drawing-text-in-a-custom-view)  <br>
 02 [Handling a Button](https://www.haikuinsider.org/interface-kit-handling-a-button)  
 03 [Handling Input Events](https://www.haikuinsider.org/interface-kit-handling-input-events)  
 04 [Drawing Shapes in a View](https://www.haikuinsider.org/interface-kit-drawing-shapes-in-a-view)  
