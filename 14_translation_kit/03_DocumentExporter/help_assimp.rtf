@@ -1,0 +1,299 @@
+{\rtf1\ansi\ansicpg1252\cocoartf2761
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fswiss\fcharset0 Helvetica-Bold;\f1\fswiss\fcharset0 Helvetica;\f2\fswiss\fcharset0 Helvetica-BoldOblique;
+\f3\fswiss\fcharset0 Helvetica-Oblique;}
+{\colortbl;\red255\green255\blue255;}
+{\*\expandedcolortbl;;}
+\margl1417\margr1417\margb1134\margt1417\vieww12540\viewh16140\viewkind1\viewscale91
+\deftab708
+\pard\pardeftab708\ri0\sl276\slmult1\sa200\partightenfactor0
+
+\f0\b\fs32 \cf0 \
+ASSIMP Viewer Utility \
+\pard\pardeftab708\ri0\sl276\slmult1\sa200\partightenfactor0
+
+\fs16 \cf0 Document version 1.0, April 2008\
+\pard\pardeftab708\ri0\sl276\slmult1\sa200\partightenfactor0
+
+\f1\b0\fs24 \cf0 \
+\pard\pardeftab708\li340\fi-360\ri0\sl276\slmult1\sa200\partightenfactor0
+\cf0 I.	Usage \
+\pard\pardeftab708\li340\ri850\sl276\slmult1\sa200\qj\partightenfactor0
+
+\fs20 \cf0 The ASSIMP Viewer Utility is a small and fast stand-alone viewer utility which is using the ASSIMP library to import assets from files. It consists of a single executable file and has no external dependencies. It displays assets with even highly complex materials and bone animations correctly.\
+AssimpView allows you to modify the textures and material properties sets of your models at runtime, easily and fast per Drag&Drop. Furthermore it can visualize normals, UV sets, bounding boxes ... It allows artists and engine programmers to work together with maximal efficiency and find the ideal model format for your internal workflow.\
+\pard\pardeftab708\li340\ri850\sl276\slmult1\sa200\qj\partightenfactor0
+
+\f0\b \cf0 System requirements
+\f1\b0 :\
+\pard\pardeftab708\li700\fi-360\ri850\sl276\slmult1\sa200\qj\partightenfactor0
+\cf0 -	A Direct3D 9.0c compliant video card with 
+\f0\b at least
+\f1\b0  support for Shader Model 2.0.
+\fs24 \
+
+\fs20 -	Shader Model 3.0 cards are recommended. Shader Model 2.0 cards always render the lighting in low-quality and have some limitations concerning complex materials. \
+-	Windows 2000 or higher. AssimpView should also run on older versions, with DirectX 9 installed, but this has never been tested. If you're a proud owner of such a version and AssimpView works for you, let us know.\
+\pard\pardeftab708\li340\ri0\sl276\slmult1\sa200\partightenfactor0
+
+\fs24 \cf0  \
+\pard\pardeftab708\li340\fi-360\ri0\sl276\slmult1\sa200\partightenfactor0
+\cf0 II.	User interface\
+\pard\pardeftab708\li340\ri0\sl276\slmult1\sa200\partightenfactor0
+
+\fs20 \cf0 The viewer\'92s user interface mainly consists of three components: \
+\pard\pardeftab708\fi340\ri0\sl276\slmult1\sa200\partightenfactor0
+\cf0 The menu bar provides access to the viewer\'92s basic options.\
+\pard\pardeftab708\li720\fi-360\ri850\sl276\slmult1\sa200\partightenfactor0
+\cf0 -	\'93
+\f2\i\b Viewer
+\f1\i0\b0 \'94: Items to load / unload assets, take screenshots and open the viewer\'92s options dialog.\
+\pard\pardeftab708\li720\fi-360\ri1206\sl276\slmult1\sa200\qj\partightenfactor0
+\cf0 	
+\fs16 * "
+\f0\b Open Asset
+\f1\b0 ": Displays the file system dialog where you can choose a new asset to load. Note that you can also Drag&Drop models onto the viewer panel.\
+	* "
+\f0\b Close Asset
+\f1\b0 ": Closes the current asset and releases all resources associated with it. No action if no asset is loaded.\
+	* "
+\f0\b Screenshot
+\f1\b0 ": Save a snapshot of the viewer to a file. The snapshot does only include the preview panel, the rest of the user interface is not visible. Saved screenshots have no watermarks. This is Open Source Software!\
+	* "
+\f0\b Reset View
+\f1\b0 ": Reset the viewing position and direction to the default settings. This is: Camera position at 0|0|0, looking at 0|0|1.\
+	* "
+\f0\b Memory consumption
+\f1\b0 ": Display a box with approximated memory statistics. Note that the total memory consumption needn't be equal to the physical memory allocated to the process (as displayed by Windows Task Manager). The memory consumption does only refer to the memory required for the asset itself, not for the rest of the viewer.\
+	* "
+\f0\b Setup file associations
+\f1\b0 ": Associate all file formats which can be read by ASSIMP with the viewer. If you double click on such a file in Windows Explorer, it will be automatically opened with AssimpView.\
+	* "
+\f0\b Recent files
+\f1\b0 ": Displays a popup menu with a list of recently opened assets. Simply click on one to reload it.\
+	* "
+\f0\b Clear history
+\f1\b0 ": Clear the file history\
+	* "
+\f0\b Quit
+\f1\b0 ": What do you think?\
+\pard\pardeftab708\li720\fi-360\ri0\sl276\slmult1\sa200\partightenfactor0
+
+\fs20 \cf0 - 	
+\f3\i "
+\f2\b Tools
+\f3\b0 "
+\f1\i0 : Additional utilities like stereo view, normal type.\
+\pard\pardeftab708\li720\fi-360\ri1208\sl276\slmult1\sa200\qj\partightenfactor0
+\cf0 	
+\fs16 * "
+\f2\i\b Log window
+\f1\i0\b0 ": Displays the output window of the logger. Warnings are displayed in orange/yellow, errors in red, debug messages in blue and status information messages in green.\
+	* "
+\f2\i\b Save log to file
+\f1\i0\b0 ": Saves the contents of the log window to a file.\
+	* "
+\f2\i\b Clear log
+\f1\i0\b0 " Clear the contents of the log window\
+	* "
+\f2\i\b Original normals
+\f1\i0\b0 ": Specifies that the original normal set from the model file is used in the preview. Normally this is the best choice, as smoothing groups etc. are handled correctly, but there are many models out there which have invalid or corrupt normal sets. However, if a model has no normal set, ASSIMP computes a smooth normal set for it. "Original normals" is in this case equivalent to "Smooth normals"\
+	* "
+\f2\i\b Smooth normals
+\f1\i0\b0 ": Specifies that a smoothed, per-vertex, normal set is used in the preview window.\
+	* "
+\f2\i\b Hard normals
+\f1\i0\b0 ": Specifies that a hard, per-face, normal set is used\
+	* "
+\f2\i\b Flip normals
+\f1\i0\b0 ": Flip all normal vectors\
+\pard\pardeftab708\li720\fi-360\ri850\sl276\slmult1\sa200\qj\partightenfactor0
+
+\fs20 \cf0 -	\'93
+\f2\i\b Background
+\f1\i0\b0 \'94: Set the background color or use a texture (cube maps are supported as skyboxes) as background image for the viewer.\
+\pard\pardeftab708\li720\fi-360\ri1208\sl276\slmult1\sa200\qj\partightenfactor0
+\cf0 	
+\fs16 * "
+\f2\i\b Set color
+\f1\i0\b0 ": Displays a color picker where you can choose a new background color for the viewer.\
+	* "
+\f2\i\b Load skybox
+\f1\i0\b0 ": Opens a file system dialog where you can select a skybox as background image. Accepted file formats are: *.dds, *.hdr.\
+	* "
+\f2\i\b Load texture
+\f1\i0\b0 ": Opens a file system dialog where you can select a texture as background image. If the format of the texture doesn't fit to the proportions of the preview window, the texture will be stretched. \
+\pard\pardeftab708\li720\fi-12\ri1208\sl276\slmult1\sa200\qj\partightenfactor0
+\cf0 Accepted file formats are: *.jpg;*.png;*.tif;*.tga;*.dds;*.hdr;*.ppm;*.bmp\
+\pard\pardeftab708\li720\fi-360\ri0\sl276\slmult1\sa200\partightenfactor0
+
+\fs20 \cf0 - "
+\f0\b ?
+\f1\b0 ": 
+\f0\b Help and feedback
+\f1\b0 \
+	
+\fs16 * "
+\f2\i\b Feedback
+\f1\i0\b0 ": Opens a popup menu with two options:\
+	* "
+\f2\i\b Report bug
+\f1\i0\b0 ": Report a bug in AssimpView or in Assimp\
+\pard\pardeftab708\li720\fi-360\ri0\sl276\slmult1\sa200\qj\partightenfactor0
+\cf0 	* "
+\f2\i\b Feature request
+\f1\i0\b0 ": Tell us what you'd like us to support. Any exotic file formats? \
+\pard\pardeftab708\li340\ri0\sl276\slmult1\sa200\qj\partightenfactor0
+
+\fs20 \cf0 The side panel \'93
+\f3\i Statistics
+\f1\i0 \'94 displays rendering statistics. The meanings of the fields change if you change between normal, node and texture or material view mode.\
+\pard\pardeftab708\li340\ri1474\sl276\slmult1\sa200\qj\partightenfactor0
+\cf0 Normal view mode:\
+\pard\pardeftab708\li340\ri1208\sl276\slmult1\sa200\qj\partightenfactor0
+\cf0 	
+\fs16 * "
+\f2\i\b Verts
+\f1\i0\b0 ": Number of unique vertices in the asset\
+	* "
+\f2\i\b Faces
+\f1\i0\b0 ": Number of faces (= triangles) in the asset\
+	* "
+\f2\i\b Nodes
+\f1\i0\b0 ": Number of nodes in the scenegraph, including the root node\
+\pard\pardeftab708\li708\fi-368\ri1208\sl276\slmult1\sa200\qj\partightenfactor0
+\cf0 	* "
+\f2\i\b Mats:
+\f1\i0\b0 " Number of different materials found in the mesh. Most loaders remove unreferenced materials.\
+\pard\pardeftab708\li700\ri1208\sl276\slmult1\sa200\qj\partightenfactor0
+\cf0 * "
+\f2\i\b Mesh
+\f1\i0\b0 ": Number of sub meshes. Each mesh has only one material 	assigned, so this number is in most cases equal to or higher than the number of materials.\
+* "
+\f2\i\b Shd
+\f1\i0\b0 ": Number of unique shaders created for this asset. If AssimpView detects that two materials can be rendered using the same Shader code, but with different parameterizations, it doesn't create the Shader twice. Most engines do so, too. This allows you to approximate the rendering const for the asset.\
+* "
+\f2\i\b Time
+\f1\i0\b0 ": Time required for loading, in seconds. This time is the raw time the process spent in Assimp loading the model itself, it does not include texture loading, Shader compilation...\
+\pard\pardeftab708\li340\ri1474\sl276\slmult1\sa200\qj\partightenfactor0
+
+\fs20 \cf0 Texture view mode:\
+\pard\pardeftab708\li340\ri1208\sl276\slmult1\sa200\qj\partightenfactor0
+\cf0 	
+\fs16 * "
+\f2\i\b Width
+\f1\i0\b0 ": Width of the texture, in pixels\
+	* "
+\f2\i\b Height
+\f1\i0\b0 ": Height of the texture in pixels\
+\pard\pardeftab708\li708\ri1208\sl276\slmult1\sa200\qj\partightenfactor0
+\cf0 * "
+\f2\i\b Format
+\f1\i0\b0 ": Format of the texture. This will normally be ARGB8. Other possible values are: RRG565, ARGB16f, ARGB32F. Embedded textures are always converted to ARGB8 format, even if they\'92re stored in the file with a higher color depth.\
+\pard\pardeftab708\li340\fi368\ri1208\sl276\slmult1\sa200\qj\partightenfactor0
+\cf0 * "
+\f2\i\b UV
+\f1\i0\b0 ": UV channel used by the texture. Normally this is the first channel.\
+\pard\pardeftab708\li340\ri1208\sl276\slmult1\sa200\qj\partightenfactor0
+\cf0 	* \'93
+\f2\i\b MIPs
+\f1\i0\b0 ": Number of MIP map levels created for the texture\
+\pard\pardeftab708\li708\ri1208\sl276\slmult1\sa200\qj\partightenfactor0
+\cf0 * \'93
+\f2\i\b Blend
+\f1\i0\b0 ": Strength of the texture. The color value obtained from the texture is multiplied with this factor to calculate the final color.\
+* "
+\f2\i\b Op
+\f1\i0\b0 ": Blend operation used to combine this texture with the corresponding material color (or the previous texture).\
+\pard\pardeftab708\li340\ri1474\sl276\slmult1\sa200\qj\partightenfactor0
+
+\fs20 \cf0 Always visible:\
+\pard\pardeftab708\li700\ri1208\sl276\slmult1\sa200\qj\partightenfactor0
+
+\fs16 \cf0 * "
+\f2\i\b FPS
+\f1\i0\b0 ": Current frame rate, in frames per second. Note that this number is not really exact. It is only an approximation to the real frame rate. The maximum frame rate will never be reached since there is a 10 ms blocker included (to work around good our old AMD timing bug)\
+\pard\pardeftab708\li340\ri0\sl276\slmult1\sa200\partightenfactor0
+
+\fs20 \cf0 The \'93
+\f3\i Rendering
+\f1\i0 \'94 panel provides rendering-related options, such as wireframe/normal visualization.\
+ \'93
+\f3\i Interaction
+\f1\i0 \'94 bundles all input related options.\
+The main component is the large viewer panel where the assets are displayed. Status messages (e.g. if a texture could not be loaded) are displayed in the upper-right edge. Yellow messages are simple information messages, red messages are error messages. Green messages, however, are coming from heart ;-)\
+\pard\pardeftab708\li340\ri0\sl276\slmult1\sa200\partightenfactor0
+
+\fs24 \cf0 \
+\pard\pardeftab708\li340\fi-360\ri0\sl276\slmult1\sa200\partightenfactor0
+\cf0 III.	Input\
+\pard\pardeftab708\li340\ri0\sl276\slmult1\sa200\partightenfactor0
+
+\fs20 \cf0 The input mode depends on the selected input behavior. If \'84
+\f3\i Zoom/Rotate
+\f1\i0 \'94 is 
+\f0\b NOT
+\f1\b0  selected the following scheme applies:\
+\pard\pardeftab708\li340\fi368\ri0\sl276\slmult1\sa200\partightenfactor0
+\cf0 \'91
+\f3\i Arrow up
+\f1\i0 \'92 	= Move forwards\
+\'91
+\f3\i Arrow left\'92
+\f1\i0  	= Move to the left\
+\'91
+\f3\i Arrow down
+\f1\i0 \'92 	= Move backwards\
+\'91
+\f3\i Arrow right
+\f1\i0 \'92 	= Move to the right\
+\pard\pardeftab708\fi340\ri0\sl276\slmult1\sa200\partightenfactor0
+\cf0 The mouse specifies the view direction. This is the typical FPS input behavior.\
+\pard\pardeftab708\fi340\ri0\sl276\slmult1\sa200\partightenfactor0
+
+\f0\b \cf0 Otherwise, if \'84
+\f2\i Zoom/Rotate
+\f0\i0 \'94 is enabled:\
+\pard\pardeftab708\li340\ri0\sl276\slmult1\sa200\partightenfactor0
+
+\f1\b0 \cf0 \'93
+\f3\i Left Mouse Button
+\f1\i0 \'94 = Keep pressed and move the mouse to rotate the asset around its local axes. Inside the yellow circle: x/y-axis, outside: Z-axis. To rotate around one axis only use the axis snap-ins (yellow squares with a cross inside).\
+\'93
+\f3\i Right Mouse Button
+\f1\i0 \'94 = Keep pressed and move the mouse to rotate the light source(s) around their x and y axes.\
+\'93
+\f3\i Middle Mouse Button
+\f1\i0 \'94 = Keep pressed and move the mouse from the left to the right or the other way round to increase/decrease the intensity of the light source(s)\
+\'93
+\f3\i Right 
+\f2\b AND
+\f3\b0  Left Mouse Button
+\f1\i0 \'94 = Keep pressed and move the mouse to rotate skybox (if existing) around the global x/y axes.\
+\'93
+\f3\i Mouse wheel
+\f1\i0 \'94 = Zoom in/out\
+\pard\pardeftab708\li340\fi-360\ri0\sl276\slmult1\sa200\partightenfactor0
+\cf0 IV.	
+\fs24 Rendering\
+\pard\pardeftab708\li340\ri0\sl276\slmult1\sa200\partightenfactor0
+
+\fs20 \cf0 Enabling MultiSampling improves rendering quality. MultiSampling is activated by default. The highest quality MultiSampling mode supported by the video card is used.\
+MultiSampling is especially useful to remove line artifacts in wireframe/normals mode. Note that the transition between normal and multisampled rendering may take a few seconds.\
+Rendering is done via Direct3D\'99 9.0c. Note that the \'93
+\f3\i Low-quality lighting
+\f1\i0 \'94-Option is not available for PS 2.0 cards. Lighting on PS 2.0 cards is always low quality.\
+\
+\pard\pardeftab708\li340\fi-360\ri0\sl276\slmult1\sa200\partightenfactor0
+\cf0 V.	
+\fs24 Known issues \
+\pard\pardeftab708\li700\fi-360\ri0\sl276\slmult1\sa200\partightenfactor0
+
+\fs20 \cf0 -	If a loading process is canceled it is not guaranteed that further loading processes will succeed. ASSIMP Viewer might even crash in this case. 
+\fs24 \
+
+\fs20 -	Some very complex materials involving real time reflection/refraction are not displayed properly.
+\fs24 \
+
+\fs20 -	When rendering non-opaque objects some triangle artifacts might occur.
+\fs24 \
+}
