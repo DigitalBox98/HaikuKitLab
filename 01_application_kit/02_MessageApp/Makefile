@@ -1,13 +1,13 @@
 ## Haiku Generic Makefile
 
 ## Application name
-NAME = SimpleApp
+NAME = MessageApp
 
 ## Application type
 TYPE = APP
 
 ## Sources
-SRCS = SimpleApp.cpp
+SRCS = MessageApp.cpp
 
 ## Required libraries 
 LIBS = be
@@ -19,7 +19,7 @@ LIBS = be
 # RSRCS = 
 
 ## Application signature
-APP_MIME_SIG = application/x-vnd.example-simpleapp
+APP_MIME_SIG = application/x-vnd.example-bmessenger
 
 ## Include Haiku engine makefile 
 include $(BUILDHOME)/etc/makefile-engine

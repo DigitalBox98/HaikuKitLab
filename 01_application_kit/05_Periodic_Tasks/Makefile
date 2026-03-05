@@ -1,13 +1,13 @@
 ## Haiku Generic Makefile
 
 ## Application name
-NAME = SimpleApp
+NAME = TimerCounter
 
 ## Application type
 TYPE = APP
 
 ## Sources
-SRCS = SimpleApp.cpp
+SRCS = TimerCounter.cpp
 
 ## Required libraries 
 LIBS = be
@@ -19,7 +19,7 @@ LIBS = be
 # RSRCS = 
 
 ## Application signature
-APP_MIME_SIG = application/x-vnd.example-simpleapp
+APP_MIME_SIG = application/x-vnd.example-TimerCounter
 
 ## Include Haiku engine makefile 
 include $(BUILDHOME)/etc/makefile-engine
