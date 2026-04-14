@@ -8,4 +8,5 @@ Read the full articles on HaikuInsider:
 02 [Dynamic lists](https://www.haikuinsider.org/support-kit-dynamic-lists)   
 03 [Streams and buffers](https://www.haikuinsider.org/support-kit-streams-and-buffers)   
 04 [Object serialization and persistence](https://www.haikuinsider.org/support-kit-object-serialization-and-persistence)   
+05 [Thread safety](https://www.haikuinsider.org/support-kit-thread-safety)   
 
